@@ -34,7 +34,7 @@ const Carousel = () => {
     <Swiper
       modules={[Autoplay, EffectFade]}
       className="rounded-2xl"
-      style={{ margin: "0 -2rem" }}
+      style={{ margin: "0 -2rem", zIndex: "-1", marginTop: "8px" }}
       autoplay={true}
       effect="fade"
     >
@@ -42,8 +42,11 @@ const Carousel = () => {
         return (
           <SwiperSlide
             key={key}
-            style={{ height: "500px", backgroundImage: `url(${item.img})` }}
-            className="bg-cover bg-no-repeat bg-center overflow-hidden  "
+            style={{
+              height: "500px",
+              backgroundImage: `url(${item.img})`,
+            }}
+            className="bg-cover bg-no-repeat bg-center overflow-hidden"
           >
             <div className="w-full h-full tracking-wide relative bg-slate-900 bg-opacity-60 ">
               <div className=" top-1/4 absolute  left-10 ">

@@ -1,0 +1,5 @@
+button.active {
+  background: rgb(22 163 74 / var(--tw-bg-opacity));
+  color: white;
+  transition: 0.3s;
+}
